@@ -14,10 +14,10 @@ module.exports ={
     "dialect": "mysql"
   },
   "production": {
-    "username": "vista_app_db_user",
-    "password": "GrsNi9NBU3OQza2sjNenrhc1HjtBazuP",
-    "database": "vista_app_db",
-    "host": "dpg-cndtoaeg1b2c739o6vlg-a",
-    "dialect": "postgres"
+    "username": process.env.DB_USERNAME,
+    "password": process.env.DB_PASSWORD,
+    "database": process.env.DB_NAME,
+    "host": process.env.DB_HOST,
+    "dialect": process.env.DB_DIALECT
   }
 }
