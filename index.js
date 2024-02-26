@@ -12,7 +12,7 @@ const messageRouter = require("./routes/Messages");
 app.use("/message", messageRouter);
 
 
-const config = require("./config/config.json");
+const config = require("./config/config");
 const dbUsername = process.env.DB_USERNAME || config.development.username;
 const dbPassword = process.env.DB_PASSWORD || config.development.password;
 const dbName = process.env.DB_NAME || config.development.database;
